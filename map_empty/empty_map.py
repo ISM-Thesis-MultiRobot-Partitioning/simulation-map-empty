@@ -9,13 +9,6 @@ from nav_msgs.msg import OccupancyGrid
 
 # from .MapPublisher import MapPublisher
 
-MAP_TOPIC = os.environ.get('MAP_TOPIC')
-if not MAP_TOPIC:
-    print('MAP_TOPIC environment variable not set.')
-    print('Cannot read map to be expanded as a result.')
-    print('Exiting.')
-    exit(1)
-
 OUTPUT_CHANNEL = os.environ.get('OUTPUT_CHANNEL')
 if not OUTPUT_CHANNEL:
     OUTPUT_CHANNEL = '/map_empty'
