@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'map_expand'
+package_name = 'map_empty'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'expander = map_expand.expander:main',
+            'empty_map = map_empty.empty_map:main',
         ],
     },
 )
