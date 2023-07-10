@@ -44,8 +44,8 @@ class MapPublisher(Node):
 
         return data
 
-    def timer_callback(self, msg):
-        self.pub.publish(msg)
+    def timer_callback(self):
+        self.pub.publish(self.data)
 
 
 def main(args=None):
